@@ -1,15 +1,19 @@
 {
   "name": "csu-ist621-waste-wise",
+  "homepage": "revoloero.github.io/csu-ist621-waste-wise",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "ghpages": "^0.0.10",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

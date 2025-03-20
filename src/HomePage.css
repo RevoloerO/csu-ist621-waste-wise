@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary-color: #56DCC5;
+  --secondary-color: #1D2128; /* Add secondary color */
+  --text-color: #2E2E2E; /* Softer black */
+  --background-color: #F5F5F5; /* Softer white */
+}
+
+.homepage {
+  font-family: Arial, sans-serif;
+  color: var(--text-color); /* Use softer black for text */
+  background-color: var(--background-color); /* Use softer white for background */
+  padding-top: 60px; /* Add padding to avoid overlap with fixed navbar */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1, h2, h3, .navbar-title {
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+.header img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.header button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.mission, .statistics, .steps, .footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.mission img, .statistics .stats-images img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.steps .step {
+  margin: 20px 0;
+}
+
+.footer {
+  background-color: var(--secondary-color); /* Set footer background to secondary color */
+  color: var(--background-color); /* Set footer text color to softer white */
+  padding: 20px;
+  text-align: center;
+  width: 100%; /* Ensure footer matches the width of the body */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.footer input[type="email"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid var(--background-color); /* Match input border with footer text color */
+  border-radius: 5px;
+}
+
+.footer button {
+  background-color: var(--primary-color); /* Set button background to softer white */
+  color: var(--background-color); /* Set button text color to primary color */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.footer button:hover {
+  background-color: var(--background-color); /* Set hover background to softer black */
+  color: var(--primary-color); /* Set hover text color to softer white */
+}
+
+.footer-links {
+  margin-top: 20px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: var(--background-color); /* Set links to softer white */
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline; /* Add underline on hover for better visibility */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+  width: 100%; /* Ensure full width */
+  position: fixed; /* Fix the navbar at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 60px; /* Set navbar height */
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  height: auto;
+  padding-left: 20px;
+}
+.navbar-right{
+    height: auto;
+    padding-right: 20px;
+}
+
+.navbar-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-title {
+  margin: 0 20px 0 0;
+  font-size: 1.5rem;
+  color: var(--text-color); /* Use softer black for navbar title */
+}
+
+.navbar-left button {
+  margin-right: 10px;
+  background-color: transparent;
+  border: none; /* Remove all borders */
+  color: var(--text-color); /* Use softer black for button text */
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 0; /* Remove border radius */
+  height: 100%; /* Match the height of the navbar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-left button.active {
+  border-bottom: 1px solid var(--primary-color); /* Active button bottom border */
+  color: var(--primary-color); /* Active button text color */
+  font-weight: bold; /* Make font bold */
+  text-shadow: 0.1px 0.1px var(--primary-color); /* Add shadow with primary color */
+}
+
+.navbar-left button:hover {
+  background-color: var(--primary-color); /* Use primary color for hover background */
+  color: var(--background-color); /* Use softer white for hover text */
+}
+
+.navbar-right button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 100%; /* Match the height of the navbar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-right button:hover {
+  background-color: var(--primary-color); /* Use primary color for hover background */
+}
