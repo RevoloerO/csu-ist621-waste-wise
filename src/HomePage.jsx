@@ -1,22 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from React Router
+import {useNavigate} from 'react-router-dom'; // Import Link from React Router
 import './HomePage.css';
+import SignUp from './SignUp.jsx';
 
 function HomePage() {
+  const navigate = useNavigate();
   return (
     <div className="homepage">
       <nav className="navbar">
         <div className="navbar-left">
           <img src="path/to/logo.png" alt="Logo" className="navbar-logo" />
           <h1 className="navbar-title">Waste Wise</h1>
-          <button className="active" onClick={() => window.location.href = '/'}>Home</button>
+          <button className="active" onClick={() => window.location.href = '/csu-ist621-waste-wise/'}>Home</button>
+          <button className="active" onClick={() => {navigate('/csu-ist621-waste-wise/')}}>Home2</button>
+          
           <button>Food Redistribution</button>
           <button>Alerts & Notifications</button>
         </div>
         <div className="navbar-right">
-          <Link to="/signup">
-            <button>Sign Up</button>
-          </Link>
+          <button className="active" onClick={() => {navigate('/csu-ist621-waste-wise/signup')}}>Sign Up</button>
         </div>
       </nav>
       <header className="header">

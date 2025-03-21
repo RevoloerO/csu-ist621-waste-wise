@@ -12,11 +12,10 @@ import './App.css';
 function App() {
   return (
     <div>
-      <HomePage />
-    
+      
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/signup" element={<SignUp />} />
+        <Route path="/csu-ist621-waste-wise/" element={<HomePage />} />
+        <Route path="/csu-ist621-waste-wise/signup" element={<SignUp />} />
       </Routes>
 
     </div>
