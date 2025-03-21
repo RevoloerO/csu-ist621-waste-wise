@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from React Router
 import './HomePage.css';
 
 function HomePage() {
@@ -13,7 +14,9 @@ function HomePage() {
           <button>Alerts & Notifications</button>
         </div>
         <div className="navbar-right">
-          <button>Sign Up</button>
+          <Link to="/signup">
+            <button>Sign Up</button>
+          </Link>
         </div>
       </nav>
       <header className="header">
