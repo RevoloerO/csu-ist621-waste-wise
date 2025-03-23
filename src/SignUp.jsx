@@ -1,10 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './SignUp.css';
 
 function SignUp() {
+  const navigate = useNavigate();
+
   return (
     <div className="signup-page">
       <div className="signup-container">
+        <button id="close-button" onClick={() => navigate('/csu-ist621-waste-wise/')}>&lt; Home Page</button>
         <h1>Create Account</h1>
         <p>Create your account to help reduce food waste</p>
         <form>

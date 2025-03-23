@@ -8,6 +8,7 @@
 }
 
 .signup-container {
+  position: relative; /* Ensure the close button is positioned relative to this container */
   background-color: white;
   padding: 40px;
   border-radius: 10px;
@@ -77,4 +78,20 @@
 
 .signup-container .login-link a:hover {
   text-decoration: underline;
+}
+
+ #close-button {
+  position: absolute;
+  top: 15px;
+  Left: 15px;
+  height: 30px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1; /* Ensure it stays above other elements */
+}
+
+.close-button:hover {
+  background-color: #ff1a1a;
 }
