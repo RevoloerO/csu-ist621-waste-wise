@@ -20,6 +20,7 @@ function HomePage() {
         </div>
         <div className="navbar-right">
           <button className="active" onClick={() => { navigate('/csu-ist621-waste-wise/signup') }}>Sign Up</button>
+          <button className="active" onClick={() => { navigate('/csu-ist621-waste-wise/login') }}>Login</button>
         </div>
       </nav>
       <header className="header">

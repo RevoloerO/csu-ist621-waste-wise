@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import './SignUp.css';
 
 function SignUp() {
@@ -8,6 +8,9 @@ function SignUp() {
   return (
     <div className="signup-page">
       <div className="signup-container">
+        <div id="close-button">
+          <Link to="/csu-ist621-waste-wise/">&lt; Home Page</Link>
+        </div>
         <button id="close-button" onClick={() => navigate('/csu-ist621-waste-wise/')}>&lt; Home Page</button>
         <h1>Create Account</h1>
         <p>Create your account to help reduce food waste</p>
@@ -23,7 +26,7 @@ function SignUp() {
           <button type="submit">Sign Up</button>
         </form>
         <p className="login-link">
-          Already registered? <a href="/login">Log In</a>
+          Already registered? <Link to="/csu-ist621-waste-wise/login">Login</Link>
         </p>
       </div>
     </div>

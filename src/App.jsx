@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import HomePage from './HomePage';
 import SignUp from './SignUp';
+import Login from './Login';
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/csu-ist621-waste-wise/" element={<HomePage />} />
         <Route path="/csu-ist621-waste-wise/signup" element={<SignUp />} />
+        <Route path="/csu-ist621-waste-wise/login" element={<Login />} />
       </Routes>
 
     </div>
