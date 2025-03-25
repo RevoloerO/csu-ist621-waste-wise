@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Import Link from React Router
 import './HomePage.css';
 import SignUp from './SignUp.jsx';
-
+import proposalPDF from './assets/IST621-G9-ProjectProposal.pdf';
 function HomePage() {
   const navigate = useNavigate();
 
@@ -12,8 +12,7 @@ function HomePage() {
         <div className="navbar-left">
           <img src="images/watsewise-icon.jpeg" alt="Logo" className="navbar-logo" /> {/* Use the imported logo */}
           <h1 className="navbar-title">Waste Wise</h1>
-          <button className="active" onClick={() => window.location.href = '/csu-ist621-waste-wise/'}>Home</button>
-          <button className="active" onClick={() => { navigate('/csu-ist621-waste-wise/') }}>Home2</button>
+          <button className="active" onClick={() => { navigate('/csu-ist621-waste-wise/') }}>Home</button>
 
           <button>Food Redistribution</button>
           <button>Alerts & Notifications</button>
@@ -26,7 +25,12 @@ function HomePage() {
       <header className="header">
         <h1>Introducing WasteWise, the world's first and only comprehensive food waste reduction solution powered by AI and blockchain</h1>
         <img src="path/to/your/image.jpg" alt="Food waste reduction" />
-        <button>Learn More</button>
+        <p>
+          Each year, the United States generates over 63 million tons of food waste, with an estimated retail value of $218 billion. 
+          This issue significantly impacts our environment, contributing to greenhouse gas emissions. By leveraging innovative technology, 
+          WasteWise aims to minimize food waste and maximize community nourishment.
+        </p>
+        <a id='learn-more' href={proposalPDF} target="_blank">Learn More</a>
       </header>
       <section className="mission">
         <h2>Our Mission</h2>

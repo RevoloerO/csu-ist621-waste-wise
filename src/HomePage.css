@@ -120,9 +120,13 @@ h1, h2, h3, .navbar-title {
   height: auto;
   padding-left: 20px;
 }
-.navbar-right{
-    height: auto;
-    padding-right: 20px;
+
+.navbar-right {
+  display: flex;
+  gap: 10px; /* Add 10px space between buttons */
+  align-items: center; /* Ensure buttons are vertically aligned */
+  height: auto;
+  padding-right: 20px;
 }
 
 .navbar-logo {
@@ -178,4 +182,11 @@ h1, h2, h3, .navbar-title {
 
 .navbar-right button:hover {
   background-color: var(--primary-color); /* Use primary color for hover background */
+}
+#learn-more{
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 10px;
+  border-radius: 10%;
+  cursor: pointer;
 }
