@@ -10,7 +10,7 @@ function HomePage() {
     <div className="homepage">
       <nav className="navbar">
         <div className="navbar-left">
-          <img src="watsewise-icon.jpeg" alt="Logo" className="navbar-logo" /> {/* Use the imported logo */}
+          <img src="images/watsewise-icon.jpeg" alt="Logo" className="navbar-logo" /> {/* Use the imported logo */}
           <h1 className="navbar-title">Waste Wise</h1>
           <button className="active" onClick={() => window.location.href = '/csu-ist621-waste-wise/'}>Home</button>
           <button className="active" onClick={() => { navigate('/csu-ist621-waste-wise/') }}>Home2</button>

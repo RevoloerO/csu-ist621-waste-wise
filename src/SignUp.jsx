@@ -4,10 +4,11 @@ import './SignUp.css';
 
 function SignUp() {
   const navigate = useNavigate();
-
+    
   return (
     <div className="signup-page">
       <div className="signup-container">
+        <img src="images/watsewise-icon.jpeg" alt="Waste Wise Logo" className="signup-logo" /> {/* Add logo here */}
         <div id="close-button">
           <Link to="/csu-ist621-waste-wise/">&lt; Home Page</Link>
         </div>

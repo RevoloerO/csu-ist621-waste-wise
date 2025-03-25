@@ -1,13 +1,14 @@
 import React from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import './SignUp.css'; // Reuse the same CSS as SignUp
-
+   
 function Login() {
     const navigate = useNavigate();
 
     return (
         <div className="signup-page">
             <div className="signup-container">
+                <img src="images/watsewise-icon.jpeg" alt="Waste Wise Logo" className="signup-logo" /> 
                 <div id="close-button">
                     <Link to="/csu-ist621-waste-wise/">&lt; Home Page</Link>
                 </div>

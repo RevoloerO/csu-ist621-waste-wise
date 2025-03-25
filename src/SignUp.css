@@ -18,6 +18,13 @@
   text-align: center;
 }
 
+.signup-logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 100px;
+  height: auto;
+}
+
 .signup-container h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.8rem;
@@ -46,7 +53,8 @@
 }
 
 .signup-container .terms input {
-  margin-right: 10px;
+  width: 10%;
+  margin: 3%;
 }
 
 .signup-container button {
