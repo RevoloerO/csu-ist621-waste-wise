@@ -1,0 +1,74 @@
+:root {
+  --primary-color: #56DCC5;
+  --secondary-color: #1D2128;
+  --text-color: #2E2E2E;
+  --background-color: #F5F5F5;
+}
+
+.regulations-panel {
+  margin-top: 20px;
+}
+
+.regulation-item {
+  background-color: var(--background-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.regulation-item h2 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.regulation-item p {
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.action-steps-box {
+  background-color: #e8f9f7; /* Lighter version of primary color */
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+  max-height: 50px; /* Initial height to show the button */
+  transition: max-height 0.5s ease-in-out; /* Smooth transition for both expand and collapse */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+}
+
+.action-steps-box.open {
+  max-height: 200px; /* Adjust based on content height */
+}
+
+.toggle-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.toggle-button:hover {
+  background-color: var(--secondary-color);
+}
+
+.toggle-content {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.toggle-content li {
+  margin-bottom: 8px;
+  color: var(--text-color);
+  line-height: 1.5;
+}

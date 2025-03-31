@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './DashBoard.css'; // Reuse the same CSS for consistent styling
 import { useNavigate } from 'react-router-dom';
 
 function Regulations() {
   const navigate = useNavigate();
+  const [showActionSteps, setShowActionSteps] = useState(false);
 
   return (
     <div className="dashboard">
@@ -27,6 +28,20 @@ function Regulations() {
               "The FDA Food Code serves as a model for safeguarding public health and ensuring food is unadulterated and honestly presented when offered to the consumer. 
               It provides guidelines on proper food storage, handling, and preparation to minimize waste and prevent foodborne illnesses."
             </p>
+            <div className={`action-steps-box ${showActionSteps ? 'open' : ''}`}>
+              <button 
+                className="toggle-button" 
+                onClick={() => setShowActionSteps(!showActionSteps)}
+              >
+                Action Steps
+              </button>
+              {showActionSteps && (
+                <ul className="toggle-content">
+                  <li><strong>Adopt Best Practices:</strong> Align your establishment's food safety protocols with the FDA Food Code to ensure consistency and compliance</li>
+                  <li><strong>Regular Training:</strong> Conduct ongoing staff training on food safety and waste reduction techniques as outlined in the Food Code</li>
+                </ul>
+              )}
+            </div>
           </div>
           <div className="regulation-item">
             <h2>2. Utilize Standardized Date Labeling</h2>
