@@ -18,6 +18,7 @@ function Login() {
                     <input type="email" placeholder="Your email address" />
                     <input type="password" placeholder="Enter your password" />
                     <button type="submit">Login</button>
+                    <button onClick={() => { navigate('/csu-ist621-waste-wise/dashboard') }}>Login</button>
                 </form>
                 <p className="login-link">
                     Don't have an account? <Link to="/csu-ist621-waste-wise/signup">Sign Up</Link>

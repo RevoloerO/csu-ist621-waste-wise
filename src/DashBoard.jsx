@@ -1,14 +1,18 @@
 import React from 'react';
 import './DashBoard.css';
+import { useNavigate } from 'react-router-dom';
 
 function DashBoard() {
+  const navigate = useNavigate();
+
   return (
     <div className="dashboard">
       <nav className="navbar">
         <div className="navbar-left">
           <img src="images/watsewise-icon.jpeg" alt="Logo" className="navbar-logo" />
           <h1 className="navbar-title">WasteWise</h1>
-          <button className="active">Home</button>
+          <button className="active" onClick={() => { navigate('/csu-ist621-waste-wise/dashboard') }}>DashBoard</button>
+          <button onClick={() => { navigate('/csu-ist621-waste-wise/regulations') }}>Regulations</button>
           <button>Food Redistribution</button>
           <button>Alerts & Notifications</button>
         </div>
