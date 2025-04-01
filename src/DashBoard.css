@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #56DCC5;
-  --secondary-color: #1D2128;
-  --text-color: #2E2E2E;
-  --background-color: #F5F5F5;
+  --primary-color: #2A9D8F; /* Darker shade of teal */
+  --secondary-color: #264653; /* Darker navy tone */
+  --text-color: #1D1D1D; /* Darker black for text */
+  --background-color: #FAF3E0; /* Lighter cream white */
 }
 
 .regulations-panel {
@@ -19,7 +19,7 @@
 }
 
 .regulation-item h2 {
-  color: var(--primary-color);
+  color: var(--secondary-color); /* Use darker secondary color */
   margin-bottom: 10px;
 }
 
@@ -75,4 +75,53 @@
 
 .navbar-title {
   cursor: pointer; /* Add pointer cursor on hover */
+}
+
+.regulations-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 sections per row */
+  gap: 20px; /* Add spacing between sections */
+}
+
+.additional-resources {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: var(--background-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.additional-resources h2 {
+  color: var(--secondary-color); /* Use darker secondary color */
+  margin-bottom: 15px;
+}
+
+.additional-resources ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.additional-resources li {
+  margin-bottom: 10px;
+}
+
+.additional-resources a {
+  color: var(--primary-color); /* Use darker primary color for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.additional-resources a:hover {
+  color: var(--secondary-color); /* Change to secondary color on hover */
+  text-decoration: underline;
+}
+
+.dashboard-content h1 {
+  font-size: 2.5rem; /* Increase font size */
+  color: var(--secondary-color); /* Use darker secondary color */
+  text-align: center; /* Center align the heading */
+  font-weight: bold; /* Make the text bold */
+  margin-bottom: 20px; /* Add spacing below the heading */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Add a stronger shadow for emphasis */
 }

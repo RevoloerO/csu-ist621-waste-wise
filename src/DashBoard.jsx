@@ -1,6 +1,7 @@
 import React from 'react';
 import './DashBoard.css';
 import { useNavigate } from 'react-router-dom';
+import Footer from './Footer.jsx'; // Import Footer component
 
 function DashBoard() {
   const navigate = useNavigate();
@@ -62,6 +63,7 @@ function DashBoard() {
           <p>75% Reduction Achieved</p>
         </section>
       </main>
+      <Footer /> {/* Add Footer component */}
     </div>
   );
 }

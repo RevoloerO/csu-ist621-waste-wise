@@ -11,6 +11,7 @@ import Login from './Login';
 import './App.css';
 import DashBoard from './DashBoard';
 import Regulations from './Regulations';
+import Policy from './Policy';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/csu-ist621-waste-wise/login" element={<Login />} />
         <Route path="/csu-ist621-waste-wise/dashboard" element={<DashBoard />} />
         <Route path="/csu-ist621-waste-wise/regulations" element={<Regulations />} />
+        <Route path="/csu-ist621-waste-wise/policy" element={<Policy />} />
       </Routes>
 
     </div>

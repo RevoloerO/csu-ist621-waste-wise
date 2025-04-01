@@ -1,8 +1,10 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Import Link from React Router
+import { useNavigate } from 'react-router-dom';
 import './HomePage.css';
 import SignUp from './SignUp.jsx';
 import proposalPDF from './assets/IST621-G9-ProjectProposal.pdf';
+import Footer from './Footer.jsx'; // Import Footer component
+
 function HomePage() {
   const navigate = useNavigate();
 
@@ -51,12 +53,13 @@ function HomePage() {
       </section>
       <section className="statistics">
         <h2>1/3 of all food produced is wasted</h2>
-        <p>1.3 billion tons of food is wasted annually, worth $1 trillion.</p>
-        <p>Redistributing food saves lives and resources.</p>
-        <div className="stats-images">
-          <img src="path/to/your/image.jpg" alt="Statistic 1" />
-          <img src="path/to/your/image.jpg" alt="Statistic 2" />
-        </div>
+        <p><strong>Food waste statistics:</strong></p>
+        <p>292 billion pounds of food is wasted in the U.S. each year.</p>
+        <p>95% of consumers would prefer to see food redistributed rather than wasted.</p>
+        <h3>Redistributing food saves lives and resources</h3>
+        <p><strong>Benefits of food redistribution:</strong></p>
+        <p>2.5 million meals are provided annually by Food Rescue US.</p>
+        <p>Many studies show that increased access to food reduces rates of hunger and food insecurity.</p>
       </section>
       <section className="steps">
         <h2>How it works</h2>
@@ -73,17 +76,7 @@ function HomePage() {
           <p>Use the app to facilitate the redistribution of surplus food.</p>
         </div>
       </section>
-      <footer className="footer">
-        <h2>Subscribe for updates</h2>
-        <input type="email" placeholder="Enter your email" />
-        <button>Subscribe</button>
-        <div className="footer-links">
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-        </div>
-      </footer>
+      <Footer /> {/* Replace footer with Footer component */}
     </div>
   );
 }
