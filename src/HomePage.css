@@ -28,9 +28,11 @@ h1, h2, h3, .navbar-title {
 }
 
 .header img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
+  width: 80%; /* Reduce the width to 80% of the container */
+  max-width: 500px; /* Set a maximum width */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the image */
+  display: block; /* Ensure the image is treated as a block element */
 }
 
 .header button {
@@ -50,6 +52,43 @@ h1, h2, h3, .navbar-title {
   width: 100%;
   max-width: 600px;
   height: auto;
+}
+
+.mission-content {
+  display: flex;
+  flex-direction: row; /* Ensure content is in the same row */
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.mission-text {
+  flex: 1;
+  text-align: left; /* Align text to the left */
+  padding-left: 50px; /* Add 20px padding to the left */
+}
+
+.mission-text h2, .mission-text p {
+  text-align: left; /* Ensure all text elements are right-aligned */
+}
+
+.mission-image {
+  flex: 1;
+  text-align: right;
+}
+
+.mission-image img {
+  max-width: 80%; /* Reduce the width to 80% of its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+  margin: 0 auto; /* Center the image */
+  display: block; /* Ensure the image is treated as a block element */
+}
+
+.mission {
+  width: 100%; /* Ensure the parent container spans the full width */
+  box-sizing: border-box; /* Include padding and border in width calculations */
 }
 
 .steps .step {

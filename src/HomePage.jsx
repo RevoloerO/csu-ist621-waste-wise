@@ -33,9 +33,21 @@ function HomePage() {
         <a id='learn-more' href={proposalPDF} target="_blank">Learn More</a>
       </header>
       <section className="mission">
-        <h2>Our Mission</h2>
-        <p>WasteWise leverages cutting-edge technology to connect food producers, retailers, and consumers, ensuring that surplus food is efficiently redistributed to those in need.</p>
-        <img src="images/watsewise-homepage2.jpg" alt="Mission" />
+        <div className="mission-content">
+          <div className="mission-text">
+            <h2>Our Mission</h2>
+            <p>
+              WasteWise leverages innovative technology to connect businesses and organizations with community partners, aiming to redistribute surplus food and minimize waste.
+            </p>
+            <p>
+              By verifying donations through AI and blockchain, we ensure transparency and trust in the redistribution process.
+            </p>
+            <p><strong>Our Goals:</strong> Minimize Food Waste & Maximize Community Impact</p>
+          </div>
+          <div className="mission-image">
+            <img src="images/watsewise-homepage2.jpg" alt="Mission" />
+          </div>
+        </div>
       </section>
       <section className="statistics">
         <h2>1/3 of all food produced is wasted</h2>
