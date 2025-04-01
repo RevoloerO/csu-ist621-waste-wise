@@ -72,3 +72,7 @@
   color: var(--text-color);
   line-height: 1.5;
 }
+
+.navbar-title {
+  cursor: pointer; /* Add pointer cursor on hover */
+}

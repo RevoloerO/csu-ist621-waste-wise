@@ -10,7 +10,7 @@ function DashBoard() {
       <nav className="navbar">
         <div className="navbar-left">
           <img src="images/watsewise-icon.jpeg" alt="Logo" className="navbar-logo" />
-          <h1 className="navbar-title">WasteWise</h1>
+          <h1 className="navbar-title" onClick={() => { navigate('/csu-ist621-waste-wise/') }}>WasteWise</h1>
           <button className="active" onClick={() => { navigate('/csu-ist621-waste-wise/dashboard') }}>DashBoard</button>
           <button onClick={() => { navigate('/csu-ist621-waste-wise/regulations') }}>Regulations</button>
           <button>Food Redistribution</button>

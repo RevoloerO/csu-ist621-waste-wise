@@ -11,7 +11,7 @@ function HomePage() {
       <nav className="navbar">
         <div className="navbar-left">
           <img src="images/watsewise-icon.jpeg" alt="Logo" className="navbar-logo" /> {/* Use the imported logo */}
-          <h1 className="navbar-title">Waste Wise</h1>
+          <h1 className="navbar-title" onClick={() => { navigate('/csu-ist621-waste-wise/') }}>WasteWise</h1>
           <button className="active" onClick={() => { navigate('/csu-ist621-waste-wise/') }}>Home</button>
 
           <button>Food Redistribution</button>
@@ -24,7 +24,7 @@ function HomePage() {
       </nav>
       <header className="header">
         <h1>Introducing WasteWise, the world's first and only comprehensive food waste reduction solution powered by AI and blockchain</h1>
-        <img src="path/to/your/image.jpg" alt="Food waste reduction" />
+        <img src="images/watsewise-homepage3.jpg" alt="Food waste reduction" />
         <p>
           Each year, the United States generates over 63 million tons of food waste, with an estimated retail value of $218 billion. 
           This issue significantly impacts our environment, contributing to greenhouse gas emissions. By leveraging innovative technology, 
@@ -35,7 +35,7 @@ function HomePage() {
       <section className="mission">
         <h2>Our Mission</h2>
         <p>WasteWise leverages cutting-edge technology to connect food producers, retailers, and consumers, ensuring that surplus food is efficiently redistributed to those in need.</p>
-        <img src="path/to/your/image.jpg" alt="Mission" />
+        <img src="images/watsewise-homepage2.jpg" alt="Mission" />
       </section>
       <section className="statistics">
         <h2>1/3 of all food produced is wasted</h2>
