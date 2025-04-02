@@ -24,7 +24,6 @@ function App() {
         <Route path="/csu-ist621-waste-wise/dashboard" element={<DashBoard />} />
         <Route path="/csu-ist621-waste-wise/regulations" element={<Regulations />} />
         <Route path="/csu-ist621-waste-wise/policy" element={<Policy />} />
-        <Redirect from="*" to="/404" />
       </Routes>
 
     </div>
