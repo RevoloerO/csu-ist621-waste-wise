@@ -27,14 +27,17 @@ function HomePage() {
         <h1>Introducing WasteWise, the world's first and only comprehensive food waste reduction solution powered by AI and blockchain</h1>
         <img src="images/watsewise-homepage3.jpg" alt="Food waste reduction" />
         <p>
-          Each year, the United States generates over 63 million tons of food waste, with an estimated retail value of $218 billion. 
-          This issue significantly impacts our environment, contributing to greenhouse gas emissions. By leveraging innovative technology, 
+          Each year, the United States generates over 63 million tons of food waste, with an estimated retail value of $218 billion.
+          This issue significantly impacts our environment, contributing to greenhouse gas emissions. By leveraging innovative technology,
           WasteWise aims to minimize food waste and maximize community nourishment.
         </p>
         <a id='learn-more' href={proposalPDF} target="_blank">Learn More</a>
       </header>
       <section className="mission">
         <div className="mission-content">
+          <div className="mission-image">
+            <img src="images/watsewise-homepage2.jpg" alt="Mission" />
+          </div>
           <div className="mission-text">
             <h2>Our Mission</h2>
             <p>
@@ -45,28 +48,31 @@ function HomePage() {
             </p>
             <p><strong>Our Goals:</strong> Minimize Food Waste & Maximize Community Impact</p>
           </div>
-          <div className="mission-image">
-            <img src="images/watsewise-homepage2.jpg" alt="Mission" />
-          </div>
+
         </div>
       </section>
       <section className="statistics">
         <div className="statistics-content">
-        <div className="statistics-image">
+
+          <div className="statistics-text">
+            <iframe title='Tonnes of food lost or wasted' src='https://www.theworldcounts.com/embeds/counters/101?background_color=Ivory&color=Teal&font_family="Helvetica+Neue"%2C+Arial%2C+sans-serif&font_size=25' ></iframe>
+            <h2>U.S. Food waste statistics:</h2>
+            Source: <a href="https://www.feedingamerica.org/our-work/reduce-food-waste">Feeding America</a>
+            <p><strong>92 Billions</strong> pounds of food is wasted in the U.S. each year.</p>
+            <p><strong>38%</strong>of all food goes unsold or uneaten.</p>
+            <p><strong>145 Billions</strong> meals' worth of food goes to landfills.</p>
+            <p><strong>51.7%</strong> of waste comes from the food industry.</p>
+          </div>
+          <div className="statistics-image">
             <img src="images/food-waste-source.jpeg" alt="Food Waste Source Chart" />
           </div>
-          <div className="statistics-text">
-            <h2>1/3 of all food produced is wasted</h2>
-            <p><strong>Food waste statistics:</strong></p>
-            <p>292 billion pounds of food is wasted in the U.S. each year.</p>
-            <p>95% of consumers would prefer to see food redistributed rather than wasted.</p>
-            <h3>Redistributing food saves lives and resources</h3>
-            <p><strong>Benefits of food redistribution:</strong></p>
-            <p>2.5 million meals are provided annually by Food Rescue US.</p>
-            <p>Many studies show that increased access to food reduces rates of hunger and food insecurity.</p>
-          </div>
-          
         </div>
+      </section>
+      <section className="redistribution-benefit">
+        <h2>Redistributing food saves lives and resources</h2>
+        <p><strong>Benefits of food redistribution:</strong></p>
+        <p>2.5 million meals are provided annually by Food Rescue US.</p>
+        <p>Many studies show that increased access to food reduces rates of hunger and food insecurity.</p>
       </section>
       <section className="steps">
         <h2>How it works</h2>

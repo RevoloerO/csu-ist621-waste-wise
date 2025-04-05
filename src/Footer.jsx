@@ -1,5 +1,5 @@
 import React from 'react';
-import './HomePage.css'; // Reuse the same CSS for consistent styling
+import './Footer.css'; // Link the new Footer.css file
 import proposalPDF from './assets/IST621-G9-ProjectProposal.pdf'; // Import the proposal PDF
 import { useNavigate } from 'react-router-dom';
 

@@ -2,23 +2,32 @@
 
 :root {
   --primary-color: #56DCC5;
-  --secondary-color: #1D2128; /* Add secondary color */
-  --text-color: #2E2E2E; /* Softer black */
-  --background-color: #FAF3E0; /* Lighter cream white */
+  --secondary-color: #1D2128;
+  /* Add secondary color */
+  --text-color: #2E2E2E;
+  /* Softer black */
+  --background-color: #FAF3E0;
+  /* Lighter cream white */
 }
 
 .homepage {
-  font-family: Arial, sans-serif;
-  color: var(--text-color); /* Use softer black for text */
-  background-color: var(--background-color); /* Use softer white for background */
-  padding-top: 60px; /* Add padding to avoid overlap with fixed navbar */
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+  /* Use softer black for text */
+  background-color: var(--background-color);
+  /* Use softer white for background */
+  padding-top: 60px;
+  /* Add padding to avoid overlap with fixed navbar */
 }
 
 body {
   font-family: "Poppins", sans-serif;
 }
 
-h1, h2, h3, .navbar-title {
+h1,
+h2,
+h3,
+.navbar-title {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -28,11 +37,16 @@ h1, h2, h3, .navbar-title {
 }
 
 .header img {
-  width: 80%; /* Reduce the width to 80% of the container */
-  max-width: 500px; /* Set a maximum width */
-  height: auto; /* Maintain aspect ratio */
-  margin: 0 auto; /* Center the image */
-  display: block; /* Ensure the image is treated as a block element */
+  width: 80%;
+  /* Reduce the width to 80% of the container */
+  max-width: 500px;
+  /* Set a maximum width */
+  height: auto;
+  /* Maintain aspect ratio */
+  margin: 0 auto;
+  /* Center the image */
+  display: block;
+  /* Ensure the image is treated as a block element */
 }
 
 .header button {
@@ -43,12 +57,15 @@ h1, h2, h3, .navbar-title {
   cursor: pointer;
 }
 
-.mission, .statistics, .steps, .footer {
+.mission,
+.statistics,
+.steps {
   padding: 20px;
   text-align: center;
 }
 
-.mission img, .statistics .stats-images img {
+.mission img,
+.statistics .stats-images img {
   width: 100%;
   max-width: 600px;
   height: auto;
@@ -56,21 +73,27 @@ h1, h2, h3, .navbar-title {
 
 .mission-content {
   display: flex;
-  flex-direction: row; /* Ensure content is in the same row */
+  flex-direction: row;
+  /* Ensure content is in the same row */
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  flex-wrap: nowrap; /* Prevent wrapping */
+  flex-wrap: nowrap;
+  /* Prevent wrapping */
 }
 
 .mission-text {
   flex: 1;
-  text-align: left; /* Align text to the left */
-  padding-left: 50px; /* Add 20px padding to the left */
+  text-align: left;
+  /* Align text to the left */
+  padding-left: 50px;
+  /* Add 20px padding to the left */
 }
 
-.mission-text h2, .mission-text p {
-  text-align: left; /* Ensure all text elements are right-aligned */
+.mission-text h2,
+.mission-text p {
+  text-align: left;
+  /* Ensure all text elements are right-aligned */
 }
 
 .mission-image {
@@ -79,16 +102,22 @@ h1, h2, h3, .navbar-title {
 }
 
 .mission-image img {
-  max-width: 80%; /* Reduce the width to 80% of its container */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 80%;
+  /* Reduce the width to 80% of its container */
+  height: auto;
+  /* Maintain aspect ratio */
   border-radius: 8px;
-  margin: 0 auto; /* Center the image */
-  display: block; /* Ensure the image is treated as a block element */
+  margin: 0 auto;
+  /* Center the image */
+  display: block;
+  /* Ensure the image is treated as a block element */
 }
 
 .mission {
-  width: 100%; /* Ensure the parent container spans the full width */
-  box-sizing: border-box; /* Include padding and border in width calculations */
+  width: 100%;
+  /* Ensure the parent container spans the full width */
+  box-sizing: border-box;
+  /* Include padding and border in width calculations */
 }
 
 .statistics-content {
@@ -98,8 +127,23 @@ h1, h2, h3, .navbar-title {
   gap: 20px;
 }
 
+.statistics-content a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
 .statistics-text {
   flex: 1;
+}
+
+.statistics-text iframe {
+  border: none;
+  width: 100%;
+  max-width: 600px;
+  height: fit-content;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
 .statistics-image {
@@ -117,76 +161,21 @@ h1, h2, h3, .navbar-title {
   margin: 20px 0;
 }
 
-.footer {
-  background-color: var(--secondary-color); /* Set footer background to secondary color */
-  color: var(--background-color); /* Set footer text color to softer white */
-  padding: 20px;
-  text-align: center;
-  width: 100%; /* Ensure footer matches the width of the body */
-  box-sizing: border-box; /* Include padding and border in the width */
-}
-
-.footer input[type="email"] {
-  padding: 10px;
-  margin-right: 10px;
-  border: 1px solid var(--background-color); /* Match input border with footer text color */
-  border-radius: 5px;
-}
-
-.footer button {
-  background-color: var(--primary-color); /* Set button background to softer white */
-  color: var(--background-color); /* Set button text color to primary color */
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.footer button:hover {
-  background-color: var(--background-color); /* Set hover background to softer black */
-  color: var(--primary-color); /* Set hover text color to softer white */
-}
-
-.footer-links {
-  margin-top: 20px;
-}
-
-.footer-links a {
-  margin: 0 10px;
-  color: var(--background-color); /* Set links to softer white */
-  text-decoration: none;
-}
-
-.footer-links a:hover {
-  text-decoration: underline; /* Add underline on hover for better visibility */
-}
-
-.footer-logo-name {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.footer-logo {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-  border-radius: 50%;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #f8f9fa;
   border-bottom: 1px solid #ddd;
-  width: 100%; /* Ensure full width */
-  position: fixed; /* Fix the navbar at the top */
+  width: 100%;
+  /* Ensure full width */
+  position: fixed;
+  /* Fix the navbar at the top */
   top: 0;
   left: 0;
   z-index: 1000;
-  height: 60px; /* Set navbar height */
+  height: 60px;
+  /* Set navbar height */
 }
 
 .navbar-left {
@@ -198,8 +187,10 @@ h1, h2, h3, .navbar-title {
 
 .navbar-right {
   display: flex;
-  gap: 10px; /* Add 10px space between buttons */
-  align-items: center; /* Ensure buttons are vertically aligned */
+  gap: 10px;
+  /* Add 10px space between buttons */
+  align-items: center;
+  /* Ensure buttons are vertically aligned */
   height: auto;
   padding-right: 20px;
 }
@@ -213,33 +204,44 @@ h1, h2, h3, .navbar-title {
 .navbar-title {
   margin: 0 20px 0 0;
   font-size: 1.5rem;
-  color: var(--text-color); /* Use softer black for navbar title */
+  color: var(--text-color);
+  /* Use softer black for navbar title */
 }
 
 .navbar-left button {
   margin-right: 10px;
   background-color: transparent;
-  border: none; /* Remove all borders */
-  color: var(--text-color); /* Use softer black for button text */
+  border: none;
+  /* Remove all borders */
+  color: var(--text-color);
+  /* Use softer black for button text */
   padding: 5px 10px;
   cursor: pointer;
-  border-radius: 0; /* Remove border radius */
-  height: 100%; /* Match the height of the navbar */
+  border-radius: 0;
+  /* Remove border radius */
+  height: 100%;
+  /* Match the height of the navbar */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .navbar-left button.active {
-  border-bottom: 1px solid var(--primary-color); /* Active button bottom border */
-  color: var(--primary-color); /* Active button text color */
-  font-weight: bold; /* Make font bold */
-  text-shadow: 0.1px 0.1px var(--primary-color); /* Add shadow with primary color */
+  border-bottom: 1px solid var(--primary-color);
+  /* Active button bottom border */
+  color: var(--primary-color);
+  /* Active button text color */
+  font-weight: bold;
+  /* Make font bold */
+  text-shadow: 0.1px 0.1px var(--primary-color);
+  /* Add shadow with primary color */
 }
 
 .navbar-left button:hover {
-  background-color: var(--primary-color); /* Use primary color for hover background */
-  color: var(--background-color); /* Use softer white for hover text */
+  background-color: var(--primary-color);
+  /* Use primary color for hover background */
+  color: var(--background-color);
+  /* Use softer white for hover text */
 }
 
 .navbar-right button {
@@ -249,14 +251,16 @@ h1, h2, h3, .navbar-title {
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  height: 100%; /* Match the height of the navbar */
+  height: 100%;
+  /* Match the height of the navbar */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .navbar-right button:hover {
-  background-color: var(--primary-color); /* Use primary color for hover background */
+  background-color: var(--primary-color);
+  /* Use primary color for hover background */
 }
 
 #learn-more {
@@ -272,57 +276,97 @@ h1, h2, h3, .navbar-title {
 }
 
 .policy-content {
-  text-align: left; /* Align content to the left */
-  line-height: 1.8; /* Improve readability */
-  color: var(--text-color); /* Use the text color variable */
+  text-align: left;
+  /* Align content to the left */
+  line-height: 1.8;
+  /* Improve readability */
+  color: var(--text-color);
+  /* Use the text color variable */
 }
 
-.policy-content h1, .policy-content h2 {
-  color: var(--secondary-color); /* Use secondary color for headings */
+.policy-content h1,
+.policy-content h2 {
+  color: var(--secondary-color);
+  /* Use secondary color for headings */
   margin-bottom: 15px;
 }
 
-.policy-content p, .policy-content ul {
+.policy-content p,
+.policy-content ul {
   margin-bottom: 15px;
+}
+
+.redistribution-benefit {
+  padding: 20px;
+  text-align: center;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.redistribution-benefit h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.redistribution-benefit p {
+  font-size: 1rem;
+  margin: 5px 0;
 }
 
 @media (max-width: 768px) {
-  .mission-content, .statistics-content {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items */
-    text-align: center; /* Center text */
+
+  .mission-content,
+  .statistics-content {
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center items */
+    text-align: center;
+    /* Center text */
   }
 
-  .mission-text, .statistics-text {
-    padding-left: 0; /* Remove left padding */
-    text-align: center; /* Center text */
+  .mission-text,
+  .statistics-text {
+    padding-left: 0;
+    /* Remove left padding */
+    text-align: center;
+    /* Center text */
   }
 
-  .mission-image, .statistics-image {
-    text-align: center; /* Center images */
+  .mission-image,
+  .statistics-image {
+    text-align: center;
+    /* Center images */
   }
 
-  .mission-image img, .statistics-image img {
-    max-width: 100%; /* Ensure images fit within the container */
+  .mission-image img,
+  .statistics-image img {
+    max-width: 100%;
+    /* Ensure images fit within the container */
   }
 
   h1 {
-    font-size: 1.8rem; /* Adjust font size for headers */
+    font-size: 1.8rem;
+    /* Adjust font size for headers */
   }
 
   h2 {
-    font-size: 1.5rem; /* Adjust font size for subheaders */
+    font-size: 1.5rem;
+    /* Adjust font size for subheaders */
   }
 
   h3 {
-    font-size: 1.2rem; /* Adjust font size for smaller headers */
+    font-size: 1.2rem;
+    /* Adjust font size for smaller headers */
   }
 
   p {
-    font-size: 1rem; /* Adjust font size for paragraphs */
+    font-size: 1rem;
+    /* Adjust font size for paragraphs */
   }
 
   .navbar-title {
-    font-size: 1.2rem; /* Adjust navbar title font size */
+    font-size: 1.2rem;
+    /* Adjust navbar title font size */
   }
 }

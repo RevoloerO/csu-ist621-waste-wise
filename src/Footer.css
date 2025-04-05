@@ -1,0 +1,57 @@
+.footer {
+  background-color: var(--secondary-color); /* Set footer background to secondary color */
+  color: var(--background-color); /* Set footer text color to softer white */
+  padding: 20px;
+  text-align: center;
+  width: 100%; /* Ensure footer matches the width of the body */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.footer input[type="email"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid var(--background-color); /* Match input border with footer text color */
+  border-radius: 5px;
+}
+
+.footer button {
+  background-color: var(--primary-color); /* Set button background to softer white */
+  color: var(--background-color); /* Set button text color to primary color */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.footer button:hover {
+  background-color: var(--background-color); /* Set hover background to softer black */
+  color: var(--primary-color); /* Set hover text color to softer white */
+}
+
+.footer-links {
+  margin-top: 20px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: var(--background-color); /* Set links to softer white */
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline; /* Add underline on hover for better visibility */
+}
+
+.footer-logo-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
