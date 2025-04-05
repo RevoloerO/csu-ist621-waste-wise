@@ -91,6 +91,28 @@ h1, h2, h3, .navbar-title {
   box-sizing: border-box; /* Include padding and border in width calculations */
 }
 
+.statistics-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.statistics-text {
+  flex: 1;
+}
+
+.statistics-image {
+  flex: 1;
+  text-align: center;
+}
+
+.statistics-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
 .steps .step {
   margin: 20px 0;
 }
@@ -262,4 +284,45 @@ h1, h2, h3, .navbar-title {
 
 .policy-content p, .policy-content ul {
   margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .mission-content, .statistics-content {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    text-align: center; /* Center text */
+  }
+
+  .mission-text, .statistics-text {
+    padding-left: 0; /* Remove left padding */
+    text-align: center; /* Center text */
+  }
+
+  .mission-image, .statistics-image {
+    text-align: center; /* Center images */
+  }
+
+  .mission-image img, .statistics-image img {
+    max-width: 100%; /* Ensure images fit within the container */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Adjust font size for headers */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Adjust font size for subheaders */
+  }
+
+  h3 {
+    font-size: 1.2rem; /* Adjust font size for smaller headers */
+  }
+
+  p {
+    font-size: 1rem; /* Adjust font size for paragraphs */
+  }
+
+  .navbar-title {
+    font-size: 1.2rem; /* Adjust navbar title font size */
+  }
 }

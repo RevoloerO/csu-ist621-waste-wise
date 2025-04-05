@@ -12,7 +12,7 @@ import './App.css';
 import DashBoard from './DashBoard';
 import Regulations from './Regulations';
 import Policy from './Policy';
-import FoodDistribution from './FoodDistribution';
+import FoodRedistribution from './FoodRedistribution';
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
         <Route path="/csu-ist621-waste-wise/dashboard" element={<DashBoard />} />
         <Route path="/csu-ist621-waste-wise/regulations" element={<Regulations />} />
         <Route path="/csu-ist621-waste-wise/policy" element={<Policy />} />
-        <Route path="/csu-ist621-waste-wise/food-distribution" element={<FoodDistribution />} />
+        <Route path="/csu-ist621-waste-wise/food-redistribution" element={<FoodRedistribution />} />
       </Routes>
 
     </div>

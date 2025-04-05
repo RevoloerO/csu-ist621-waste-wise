@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './HomePage.css';
 import SignUp from './SignUp.jsx';
@@ -15,7 +15,7 @@ function HomePage() {
           <img src="images/watsewise-icon.jpeg" alt="Logo" className="navbar-logo" /> {/* Use the imported logo */}
           <h1 className="navbar-title" onClick={() => { navigate('/csu-ist621-waste-wise/') }}>WasteWise</h1>
           <button className="active" onClick={() => { navigate('/csu-ist621-waste-wise/') }}>Home</button>
-          <button onClick={() => { navigate('/csu-ist621-waste-wise/food-distribution') }} >Food Redistribution</button>
+          <button onClick={() => { navigate('/csu-ist621-waste-wise/food-redistribution') }}>Food Redistribution</button>
           <button>Alerts & Notifications</button>
         </div>
         <div className="navbar-right">
@@ -51,14 +51,22 @@ function HomePage() {
         </div>
       </section>
       <section className="statistics">
-        <h2>1/3 of all food produced is wasted</h2>
-        <p><strong>Food waste statistics:</strong></p>
-        <p>292 billion pounds of food is wasted in the U.S. each year.</p>
-        <p>95% of consumers would prefer to see food redistributed rather than wasted.</p>
-        <h3>Redistributing food saves lives and resources</h3>
-        <p><strong>Benefits of food redistribution:</strong></p>
-        <p>2.5 million meals are provided annually by Food Rescue US.</p>
-        <p>Many studies show that increased access to food reduces rates of hunger and food insecurity.</p>
+        <div className="statistics-content">
+        <div className="statistics-image">
+            <img src="images/food-waste-source.jpeg" alt="Food Waste Source Chart" />
+          </div>
+          <div className="statistics-text">
+            <h2>1/3 of all food produced is wasted</h2>
+            <p><strong>Food waste statistics:</strong></p>
+            <p>292 billion pounds of food is wasted in the U.S. each year.</p>
+            <p>95% of consumers would prefer to see food redistributed rather than wasted.</p>
+            <h3>Redistributing food saves lives and resources</h3>
+            <p><strong>Benefits of food redistribution:</strong></p>
+            <p>2.5 million meals are provided annually by Food Rescue US.</p>
+            <p>Many studies show that increased access to food reduces rates of hunger and food insecurity.</p>
+          </div>
+          
+        </div>
       </section>
       <section className="steps">
         <h2>How it works</h2>
