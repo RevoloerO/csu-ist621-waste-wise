@@ -15,7 +15,7 @@ function HomePage() {
           <img src="images/watsewise-icon.jpeg" alt="Logo" className="navbar-logo" /> {/* Use the imported logo */}
           <h1 className="navbar-title" onClick={() => { navigate('/csu-ist621-waste-wise/') }}>WasteWise</h1>
           <button className="active" onClick={() => { navigate('/csu-ist621-waste-wise/') }}>Home</button>
-          <button>Food Redistribution</button>
+          <button onClick={() => { navigate('/csu-ist621-waste-wise/food-distribution') }} >Food Redistribution</button>
           <button>Alerts & Notifications</button>
         </div>
         <div className="navbar-right">
