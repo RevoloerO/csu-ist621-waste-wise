@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --primary-color: #56DCC5;
-  --secondary-color: #1D2128;
-  /* Add secondary color */
-  --text-color: #2E2E2E;
-  /* Softer black */
-  --background-color: #FAF3E0;
-  /* Lighter cream white */
+  --primary-color: #2A9D8F; /* Darker shade of teal */
+  --secondary-color: #264653; /* Darker navy tone */
+  --text-color: #1D1D1D; /* Darker black for text */
+  --background-color: #FAF3E0; /* Lighter cream white */
 }
 
 .homepage {
@@ -117,7 +114,11 @@ h3,
   width: 100%;
   /* Ensure the parent container spans the full width */
   box-sizing: border-box;
-  /* Include padding and border in width calculations */
+  background-color: white;
+  color: var(--secondary-color);
+}
+.mission h2{
+  color: var(--primary-color);
 }
 
 .statistics-content {
@@ -142,6 +143,23 @@ h3,
   height: fit-content;
   margin: 0 auto;
   display: block;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.iframe-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.iframe-row iframe {
+  flex: 1;
+  max-width: 48%; /* Ensure iframes fit within the row */
+  height: 100px; /* Set a consistent height */
+  border: none;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
@@ -299,13 +317,14 @@ h3,
 .redistribution-benefit {
   padding: 20px;
   text-align: center;
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: white;
+  color: var(--secondary-color);
 }
 
-.redistribution-benefit h3 {
+.redistribution-benefit h2 {
   font-size: 1.8rem;
   margin-bottom: 10px;
+  color: var(--primary-color);
 }
 
 .redistribution-benefit p {

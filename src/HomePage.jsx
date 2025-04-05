@@ -56,6 +56,10 @@ function HomePage() {
 
           <div className="statistics-text">
             <iframe title='Tonnes of food lost or wasted' src='https://www.theworldcounts.com/embeds/counters/101?background_color=Ivory&color=Teal&font_family="Helvetica+Neue"%2C+Arial%2C+sans-serif&font_size=25' ></iframe>
+            <div className="iframe-row">
+              <iframe title='People who died from hunger' src='https://www.theworldcounts.com/embeds/counters/2?background_color=Ivory&color=DarkSlateGray&font_family=%22Helvetica+Neue%22%2C+Arial%2C+sans-serif&font_size=12'></iframe>
+              <iframe title='Number of obese people' src='https://www.theworldcounts.com/embeds/counters/51?background_color=Ivory&color=DarkSlateGray&font_family=%22Helvetica+Neue%22%2C+Arial%2C+sans-serif&font_size=12'></iframe>
+            </div>
             <h2>U.S. Food waste statistics:</h2>
             Source: <a href="https://www.feedingamerica.org/our-work/reduce-food-waste">Feeding America</a>
             <p><strong>92 Billions</strong> pounds of food is wasted in the U.S. each year.</p>
