@@ -4,12 +4,20 @@ import './HomePage.css';
 import SignUp from './SignUp.jsx';
 import proposalPDF from './assets/IST621-G9-ProjectProposal.pdf';
 import Footer from './Footer.jsx'; // Import Footer component
+import { APIProvider, Map } from '@vis.gl/react-google-maps';
 
 function HomePage() {
   const navigate = useNavigate();
 
   return (
     <div className="homepage">
+      YOOOOOOOOOOO
+      <Map
+          defaultZoom={8}
+          defaultCenter={{ lat: -34.397, lng: 150.644 }}
+          gestureHandling={'greedy'}
+          disableDefaultUI={true}
+        />
       <nav className="navbar">
         <div className="navbar-left">
           <img src="images/watsewise-icon.jpeg" alt="Logo" className="navbar-logo" /> {/* Use the imported logo */}

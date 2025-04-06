@@ -125,3 +125,27 @@
   margin-bottom: 20px; /* Add spacing below the heading */
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Add a stronger shadow for emphasis */
 }
+
+.food-bank-map {
+  padding: 20px;
+  text-align: center;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.food-bank-map h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.food-bank-map .map-container {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}

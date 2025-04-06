@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './DashBoard.css'; // Reuse the same CSS for consistent styling
 import { useNavigate } from 'react-router-dom';
 import Footer from './Footer.jsx'; // Import Footer component
+import FoodMap from './FoodMap.jsx'; // Import the updated Map component
 
-function FoodRedistribution() { // Updated function name
+function FoodRedistribution() {
   const navigate = useNavigate();
+  const [userLocation, setUserLocation] = useState({ lat: 0, lng: 0 });
+
+  useEffect(() => {
+    // Fetch user's location based on IP
+    fetch('https://ipapi.co/json/')
+      .then((response) => response.json())
+      .then((data) => {
+        setUserLocation({ lat: data.latitude, lng: data.longitude });
+        console.log('User location:', data.latitude, data.longitude);
+      })
+      .catch((error) => console.error('Error fetching user location:', error));
+  }, []);
 
   return (
     <div className="dashboard">
@@ -52,6 +65,10 @@ function FoodRedistribution() { // Updated function name
               <button onClick={() => alert('Supplier Info: Dairy Best')}>Supplier Info</button>
             </li>
           </ul>
+        </section>
+        <section className="food-bank-map">
+          <h2>Find Food Banks Near You</h2>
+          <FoodMap />
         </section>
       </main>
       <Footer /> {/* Add Footer component */}
