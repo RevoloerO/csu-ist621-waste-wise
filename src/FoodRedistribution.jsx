@@ -6,18 +6,7 @@ import FoodMap from './FoodMap.jsx'; // Import the updated Map component
 
 function FoodRedistribution() {
   const navigate = useNavigate();
-  const [userLocation, setUserLocation] = useState({ lat: 0, lng: 0 });
 
-  useEffect(() => {
-    // Fetch user's location based on IP
-    fetch('https://ipapi.co/json/')
-      .then((response) => response.json())
-      .then((data) => {
-        setUserLocation({ lat: data.latitude, lng: data.longitude });
-        console.log('User location:', data.latitude, data.longitude);
-      })
-      .catch((error) => console.error('Error fetching user location:', error));
-  }, []);
 
   return (
     <div className="dashboard">
