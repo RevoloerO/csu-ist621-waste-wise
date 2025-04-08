@@ -1,15 +1,15 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import { APIProvider, Map } from '@vis.gl/react-google-maps';   
+import { APIProvider, Map } from '@vis.gl/react-google-maps';
 import { AdvancedMarker, Pin, InfoWindow } from '@vis.gl/react-google-maps';
 
 function FoodMap() {
     const defaultZoom = 10;
-    const [position, setPosition] = useState({ lat: 0, lng: 0 });
+    const [position, setPosition] = useState({ lat:  11.6944, lng:  41.4993 });
 
     useEffect(() => {
         // Fetch user's location based on IP
-        fetch('https://ipapi.co/json/')
+        fetch('https://geolocation-db.com/json/')
             .then((response) => response.json())
             .then((data) => {
                 setPosition({ lat: data.latitude, lng: data.longitude });
@@ -21,7 +21,7 @@ function FoodMap() {
 
         <div style={{ height: '400px', width: '100%', borderRadius: '8px' }}>
             <Map zoom={defaultZoom} center={position}>
-
+                
             </Map>
         </div>
     );
