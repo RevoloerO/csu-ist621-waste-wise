@@ -1,0 +1,36 @@
+.policy-page {
+  text-align: left;
+  padding: 20px 20px; /* Add 20px padding to left and right */
+}
+
+.policy-content {
+  line-height: 1.8;
+  color: var(--text-color); /* Use the text color variable */
+    padding: 0 50px; /* Add padding to the content for better readability */
+}
+
+.policy-content h1,
+.policy-content h2 {
+  color: var(--secondary-color); /* Use secondary color for headings */
+  margin-bottom: 15px;
+}
+
+.policy-content p,
+.policy-content ul {
+  margin-bottom: 15px;
+}
+
+.policy-content a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.policy-content a:hover {
+  text-decoration: underline;
+}
+
+.policy-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 20px;
+}
