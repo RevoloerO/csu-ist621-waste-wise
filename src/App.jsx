@@ -17,6 +17,7 @@ import Policy from './Policy';
 import FoodRedistribution from './FoodRedistribution';
 import { APIProvider, Map } from '@vis.gl/react-google-maps';
 import FoodMap from './FoodMap';
+import Terms from './Terms';
 
 function App() {
  
@@ -31,6 +32,7 @@ function App() {
           <Route path="/csu-ist621-waste-wise/regulations" element={<Regulations />} />
           <Route path="/csu-ist621-waste-wise/policy" element={<Policy />} />
           <Route path="/csu-ist621-waste-wise/food-redistribution" element={<FoodRedistribution />} />
+          <Route path="/csu-ist621-waste-wise/terms" element={<Terms />} />
         </Routes>
       </APIProvider>
     </div>

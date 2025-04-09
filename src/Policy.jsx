@@ -8,7 +8,7 @@ function Policy() {
 
   return (
     <div className="policy-page">
-      <button className="return-button" onClick={() => navigate(-1)} title="Go Back">← Back</button>
+      <button className="return-button" onClick={() => navigate('/csu-ist621-waste-wise/')} title="Go Back">← Home Page</button>
       <header className="header">
         <h1>PRIVACY POLICY</h1>
         <p><strong>Last updated:</strong> April 01, 2025</p>

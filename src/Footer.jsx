@@ -29,7 +29,7 @@ function Footer() {
                 <a href={proposalPDF} target="_blank" rel="noopener noreferrer">About</a> {/* Link to the proposal PDF */}
                 <a onClick={() => navigate('/csu-ist621-waste-wise/policy')} style={{ cursor: 'pointer' }}>Privacy Policy</a> {/* Use navigate for Privacy Policy */}
                 <a href="#">Contact</a>
-                <a href="#">Terms of Service</a>
+                <a onClick={() => navigate('/csu-ist621-waste-wise/terms')} style={{ cursor: 'pointer' }}>Terms of Service</a>
             </div>
         </footer>
     );

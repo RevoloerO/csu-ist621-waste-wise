@@ -22,7 +22,9 @@ function SignUp() {
           <input type="password" placeholder="Enter your password" />
           <div className="terms">
             <input type="checkbox" id="terms" />
-            <label htmlFor="terms">I agree with Terms & Conditions</label>
+            <label htmlFor="terms">
+              I agree with <Link id='policy-link' to="/csu-ist621-waste-wise/policy">Privacy Policy</Link> and Terms & Conditions
+            </label>
           </div>
           <button type="submit">Sign Up</button>
         </form>
