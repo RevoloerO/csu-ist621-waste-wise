@@ -89,12 +89,12 @@
   text-decoration: underline;
 }
 
-#policy-link {
+#link {
   color: var(--primary-color);
   text-decoration: none;
 }
 
-#policy-link:hover {
+#link:hover {
   text-decoration: underline;
 }
 

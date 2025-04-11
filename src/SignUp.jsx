@@ -23,7 +23,7 @@ function SignUp() {
           <div className="terms">
             <input type="checkbox" id="terms" />
             <label htmlFor="terms">
-              I agree with <Link id='policy-link' to="/csu-ist621-waste-wise/policy">Privacy Policy</Link> and <Link id='terms-link' to="/csu-ist621-waste-wise/terms">Terms of Service</Link>
+              I agree with <Link id='link' to="/csu-ist621-waste-wise/policy">Privacy Policy</Link> and <Link id='link' to="/csu-ist621-waste-wise/terms">Terms of Service</Link>
             </label>
           </div>
           <button type="submit">Sign Up</button>
