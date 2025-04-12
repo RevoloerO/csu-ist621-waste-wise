@@ -3,23 +3,32 @@
     "id": 1,
     "username": "user1",
     "password": "password1",
-    "role": "user"
+    "role": "user",
+    "firstName": "John",
+    "lastName": "Doe"
   },
   {
     "id": 2,
     "username": "admin1",
     "password": "adminpassword",
-    "role": "admin"
+    "role": "admin",
+    "firstName": "Jane",
+    "lastName": "Smith"
   },
   {
     "id": 3,
     "username": "regulator1",
     "password": "regulatorpassword",
-    "role": "regulator"
+    "role": "regulator",
+    "firstName": "Alice",
+    "lastName": "Johnson"
   },
-  {    "id": 4,
+  {
+    "id": 4,
     "username": "hassan",
     "password": "ahmed",
-    "role": "admin"
+    "role": "admin",
+    "firstName": "Hassan",
+    "lastName": "Ahmed"
   }
 ]

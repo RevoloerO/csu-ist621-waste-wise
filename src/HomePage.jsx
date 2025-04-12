@@ -1,29 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './HomePage.css';
 import SignUp from './SignUp.jsx';
 import proposalPDF from './assets/IST621-G9-ProjectProposal.pdf';
-import Footer from './Footer.jsx'; // Import Footer component
-import { APIProvider, Map } from '@vis.gl/react-google-maps';
+import Footer from './Footer.jsx';
+import NavBar from './NavBar.jsx'; // Import NavBar component
 
 function HomePage() {
   const navigate = useNavigate();
 
   return (
     <div className="homepage">
-      <nav className="navbar">
-        <div className="navbar-left">
-          <img src="images/watsewise-icon.jpeg" alt="Logo" className="navbar-logo" /> {/* Use the imported logo */}
-          <h1 className="navbar-title" onClick={() => { navigate('/csu-ist621-waste-wise/') }}>WasteWise</h1>
-          <button className="active" onClick={() => { navigate('/csu-ist621-waste-wise/') }}>Home</button>
-          <button onClick={() => { navigate('/csu-ist621-waste-wise/food-redistribution') }}>Food Redistribution</button>
-          <button>Alerts & Notifications</button>
-        </div>
-        <div className="navbar-right">
-          <button className="active" onClick={() => { navigate('/csu-ist621-waste-wise/signup') }}>Sign Up</button>
-          <button className="active" onClick={() => { navigate('/csu-ist621-waste-wise/login') }}>Login</button>
-        </div>
-      </nav>
+      <NavBar /> {/* Replace navigation bar with NavBar component */}
       <header className="header">
         <h1>Introducing WasteWise, the world's first and only comprehensive food waste reduction solution powered by AI and blockchain</h1>
         <img src="images/watsewise-homepage3.jpg" alt="Food waste reduction" />
