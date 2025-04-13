@@ -3,14 +3,12 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: url('path/to/your/background-image.jpg') no-repeat center center;
-  background-size: cover;
 }
 
 .signup-container {
   position: relative;
   /* Ensure the close button is positioned relative to this container */
-  background-color: white;
+  background-color: var(--highlight-color);
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -30,11 +28,12 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 1.8rem;
   margin-bottom: 10px;
+  color: var(--secondary-color);
 }
 
 .signup-container p {
   font-family: 'Poppins', sans-serif;
-  color: #666;
+  color: var(--text-color);
   margin-bottom: 20px;
 }
 
@@ -42,7 +41,7 @@
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  border: 1px solid #ddd;
+  border: 1px solid var(--primary-color);
   border-radius: 5px;
   font-family: 'Poppins', sans-serif;
 }
@@ -71,7 +70,7 @@
 }
 
 .signup-container button:hover {
-  background-color: #45b8a5;
+  background-color: var(--accent-color);
 }
 
 .signup-container .login-link {
@@ -81,11 +80,12 @@
 }
 
 .signup-container .login-link a {
-  color: var(--primary-color);
+  color: var(--accent-color);
   text-decoration: none;
 }
 
 .signup-container .login-link a:hover {
+  color: var(--primary-color);
   text-decoration: underline;
 }
 
@@ -98,7 +98,6 @@
   text-decoration: underline;
 }
 
-
 #close-button {
   position: absolute;
   top: 15px;
@@ -110,6 +109,11 @@
   cursor: pointer;
   z-index: 1;
   /* Ensure it stays above other elements */
+  color: var(--accent-color);
+}
+
+#close-button:hover {
+  color: var(--primary-color);
 }
 
 .close-button:hover {

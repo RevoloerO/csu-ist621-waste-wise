@@ -43,7 +43,6 @@ function SignUp() {
         <div id="close-button">
           <Link to="/csu-ist621-waste-wise/">&lt; Home Page</Link>
         </div>
-        <button id="close-button" onClick={() => navigate('/csu-ist621-waste-wise/')}>&lt; Home Page</button>
         <h1>Create Account</h1>
         <p>Create your account to help reduce food waste</p>
         <form onSubmit={handleSignUp}>

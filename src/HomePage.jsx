@@ -62,25 +62,77 @@ function HomePage() {
         </div>
       </section>
       <section className="redistribution-benefit">
-        <h2>Redistributing food saves lives and resources</h2>
-        <p><strong>Benefits of food redistribution:</strong></p>
-        <p>2.5 million meals are provided annually by Food Rescue US.</p>
-        <p>Many studies show that increased access to food reduces rates of hunger and food insecurity.</p>
+        <h2 className="redistribution-title">Redistributing Food Saves Lives—and the Planet</h2>
+        <div className="redistribution-container">
+          <div className="redistribution-image">
+            <img src="images/watsewise-homepage.jpg" alt="Redistribution" />
+          </div>
+          <div className="redistribution-text">
+            <p className="redistribution-intro">
+              Every meal saved isn't just food on a plate—it's a solution to hunger, a win against waste, and a step toward a sustainable future.
+            </p>
+            <p>WasteWise empowers food suppliers, distributors, and nonprofits to:</p>
+            <ul className="redistribution-list">
+              <li>✨ <strong>Predict surplus</strong> before it becomes waste</li>
+              <li>🔗 <strong>Connect donations</strong> with those who need it most—fast</li>
+              <li>🛡 <strong>Ensure transparency</strong> and safety through blockchain verification</li>
+            </ul>
+            <p className="redistribution-call-to-action">
+              Let’s transform excess into impact—one meal, one match, one mission at a time.
+            </p>
+          </div>
+          
+        </div>
+        
+        <table className="impact-table">
+          <thead>
+            <tr>
+              <th>📊 Stat</th>
+              <th>🌟 Why It Matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>🍎 <strong>108 billion pounds</strong> of food go to waste annually in the U.S. (Feeding America)</td>
+              <td>WasteWise diverts surplus from landfills into meals.</td>
+            </tr>
+            <tr>
+              <td>🍽 <strong>1 in 8 Americans</strong> struggle with food insecurity (USDA)</td>
+              <td>Redistribution helps close the hunger gap.</td>
+            </tr>
+            <tr>
+              <td>🚚 <strong>2.5+ million meals</strong> delivered yearly by Food Rescue US</td>
+              <td>WasteWise expands this impact with tech automation.</td>
+            </tr>
+            <tr>
+              <td>🌍 <strong>8–10% of global emissions</strong> come from food waste (UN FAO)</td>
+              <td>Reducing waste means cutting methane emissions.</td>
+            </tr>
+            <tr>
+              <td>💰 <strong>$218 billion</strong> is spent on food that never gets eaten (ReFED)</td>
+              <td>WasteWise helps businesses recover value through donations.</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
       <section className="steps">
-        <h2>How it works</h2>
-        <div className="step">
-          <h3>Step 1: Register on WasteWise</h3>
-          <p>Sign up and create your profile.</p>
+        <h2>🚀 How WasteWise Works</h2>
+        <p className="steps-intro">Redistributing food has never been this smart—or this simple.</p>
+        <div className="steps-container">
+          <div className="step-card">
+            <h3>🖊️ Step 1: Join the Movement</h3>
+            <p>Create your WasteWise profile in seconds. Whether you're a supplier or a food bank, you're one step closer to saving meals.</p>
+          </div>
+          <div className="step-card">
+            <h3>🌐 Step 2: Discover & Connect</h3>
+            <p>Browse a live map of local food producers, stores, and suppliers ready to donate. Find the right matches based on food type or location.</p>
+          </div>
+          <div className="step-card">
+            <h3>📦 Step 3: Redistribute with Ease</h3>
+            <p>Facilitate donations in just a few taps. Track surplus items, manage logistics, and get real-time updates—all in one seamless app.</p>
+          </div>
         </div>
-        <div className="step">
-          <h3>Step 2: Connect with local food sources</h3>
-          <p>Find and connect with local food producers and retailers.</p>
-        </div>
-        <div className="step">
-          <h3>Step 3: Facilitate redistribution via the app</h3>
-          <p>Use the app to facilitate the redistribution of surplus food.</p>
-        </div>
+        <p className="steps-call-to-action">💡 Less waste, more impact. Let’s feed people, not landfills.</p>
       </section>
       <Footer /> {/* Replace footer with Footer component */}
     </div>
