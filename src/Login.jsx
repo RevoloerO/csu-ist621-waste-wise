@@ -16,6 +16,7 @@ function Login() {
         );
         if (user) {
             console.log('Login successful!');
+            user.isLoggedIn = true; // Mark the user as logged in
             navigate('/csu-ist621-waste-wise/dashboard');
         } else {
             setError('Invalid email or password');

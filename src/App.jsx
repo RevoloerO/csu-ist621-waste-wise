@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { AdvancedMarker, Pin, InfoWindow } from '@vis.gl/react-google-maps';
 import {
@@ -18,13 +17,15 @@ import FoodRedistribution from './FoodRedistribution';
 import { APIProvider, Map } from '@vis.gl/react-google-maps';
 import FoodMap from './FoodMap';
 import Terms from './Terms';
+import AdminPage from './AdminPage';
 
 function App() {
- 
+
   return (
     <div>
       <APIProvider solutionChannel='GMP_devsite_samples_v3_rgmbasicmap' apiKey={'AIzaSyD5iQkLHzWEETLEaj0WcnECMU7woV3aNuk'} onLoad={() => console.log('Maps API has loaded.')}>
-      <Routes>
+
+        <Routes>
           <Route path="/csu-ist621-waste-wise/" element={<HomePage />} />
           <Route path="/csu-ist621-waste-wise/signup" element={<SignUp />} />
           <Route path="/csu-ist621-waste-wise/login" element={<Login />} />
@@ -33,10 +34,12 @@ function App() {
           <Route path="/csu-ist621-waste-wise/policy" element={<Policy />} />
           <Route path="/csu-ist621-waste-wise/food-redistribution" element={<FoodRedistribution />} />
           <Route path="/csu-ist621-waste-wise/terms" element={<Terms />} />
+          <Route path="/csu-ist621-waste-wise/admin" element={<AdminPage />} />
         </Routes>
+
       </APIProvider>
     </div>
-  
+
   );
 }
 

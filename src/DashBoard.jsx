@@ -1,24 +1,15 @@
 import React from 'react';
 import './DashBoard.css';
 import { useNavigate } from 'react-router-dom';
-import Footer from './Footer.jsx'; // Import Footer component
+import Footer from './Footer.jsx';
+import UserNavBar from './UserNavBar.jsx'; // Import UserNavBar component
 
 function DashBoard() {
   const navigate = useNavigate();
 
   return (
     <div className="dashboard">
-      <nav className="navbar">
-        <div className="navbar-left">
-          <img src="images/watsewise-icon.jpeg" alt="Logo" className="navbar-logo" />
-          <h1 className="navbar-title" onClick={() => { navigate('/csu-ist621-waste-wise/') }}>WasteWise</h1>
-          <button className="active" onClick={() => { navigate('/csu-ist621-waste-wise/dashboard') }}>DashBoard</button>
-          <button onClick={() => { navigate('/csu-ist621-waste-wise/regulations') }}>Regulations</button>
-          <button>Food Redistribution</button>
-          <button>Alerts & Notifications</button>
-        </div>
-      </nav>
-
+      <UserNavBar /> {/* Replace inline navbar with UserNavBar component */}
       <main className="dashboard-content">
         <h1>Real-Time Food Waste Predictions</h1>
         <div className="charts">
