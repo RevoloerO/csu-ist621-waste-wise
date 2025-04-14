@@ -134,6 +134,7 @@ function HomePage() {
         </div>
         <p className="steps-call-to-action">💡 Less waste, more impact. Let’s feed people, not landfills.</p>
       </section>
+      
       <Footer /> {/* Replace footer with Footer component */}
     </div>
   );

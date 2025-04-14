@@ -12,8 +12,9 @@ function NavBar() {
                 <h1 className="navbar-title" onClick={() => { navigate('/csu-ist621-waste-wise/') }}>WasteWise</h1>
                 <button className="active" onClick={() => { navigate('/csu-ist621-waste-wise/') }}>Home</button>
                 <button onClick={() => { navigate('/csu-ist621-waste-wise/policy') }}>Policy</button>
-                <button onClick={() => { navigate('/csu-ist621-waste-wise/about') }}>About</button>
                 <button onClick={() => { navigate('/csu-ist621-waste-wise/terms') }}>Terms of Service</button>
+                <button onClick={() => { navigate('/csu-ist621-waste-wise/about') }}>About</button>
+
             </div>
             <div className="navbar-right">
                 <button className="active" onClick={() => { navigate('/csu-ist621-waste-wise/signup') }}>Sign Up</button>

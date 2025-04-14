@@ -18,6 +18,7 @@ import { APIProvider, Map } from '@vis.gl/react-google-maps';
 import FoodMap from './FoodMap';
 import Terms from './Terms';
 import AdminPage from './AdminPage';
+import About from './About'; // Import About page
 
 function App() {
 
@@ -29,11 +30,12 @@ function App() {
           <Route path="/csu-ist621-waste-wise/" element={<HomePage />} />
           <Route path="/csu-ist621-waste-wise/signup" element={<SignUp />} />
           <Route path="/csu-ist621-waste-wise/login" element={<Login />} />
+          <Route path="/csu-ist621-waste-wise/policy" element={<Policy />} />
+          <Route path="/csu-ist621-waste-wise/terms" element={<Terms />} />
+          <Route path="/csu-ist621-waste-wise/about" element={<About />} />
           <Route path="/csu-ist621-waste-wise/dashboard" element={<DashBoard />} />
           <Route path="/csu-ist621-waste-wise/regulations" element={<Regulations />} />
-          <Route path="/csu-ist621-waste-wise/policy" element={<Policy />} />
           <Route path="/csu-ist621-waste-wise/food-redistribution" element={<FoodRedistribution />} />
-          <Route path="/csu-ist621-waste-wise/terms" element={<Terms />} />
           <Route path="/csu-ist621-waste-wise/admin" element={<AdminPage />} />
         </Routes>
 
