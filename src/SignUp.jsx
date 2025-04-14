@@ -11,7 +11,16 @@ function SignUp() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  const handleSignUp = (e) => {
+  const hashPassword = async (password) => {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(password);
+    const hashBuffer = await window.crypto.subtle.digest("SHA-256", data);
+    return Array.from(new Uint8Array(hashBuffer))
+      .map((byte) => byte.toString(16).padStart(2, '0'))
+      .join('');
+  };
+
+  const handleSignUp = async (e) => {
     e.preventDefault();
 
     // Check if username already exists
@@ -21,11 +30,14 @@ function SignUp() {
       return;
     }
 
+    // Hash the password before storing it
+    const hashedPassword = await hashPassword(password);
+
     // Add new user to the database
     const newUser = {
       id: users.length + 1,
       username,
-      password,
+      password: hashedPassword, // Store hashed password
       role: 'user', // Default role
       firstName,
       lastName,

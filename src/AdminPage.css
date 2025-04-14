@@ -1,0 +1,126 @@
+.admin-page {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-content {
+  margin: 2em auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.admin-title {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.admin-description {
+  font-size: 1.2rem;
+  margin-bottom: 2em;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.user-management h2 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 1em;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+  background-color: var(--highlight-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid var(--primary-color);
+  padding: 10px;
+  text-align: left;
+}
+
+.user-table th {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.user-table td input,
+.user-table td select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+}
+
+.save-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.save-button:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+.web-flow {
+  background-color: var(--highlight-color);
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.web-flow h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.web-flow-intro {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.web-flow-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.web-flow-step {
+  background-color: var(--background-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.web-flow-step h3 {
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.web-flow-step p {
+  color: var(--text-color);
+  font-size: 1rem;
+}

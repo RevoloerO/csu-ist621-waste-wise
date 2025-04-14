@@ -9,10 +9,20 @@ function Login() {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
 
-    const handleLogin = (e) => {
+    const hashPassword = async (password) => {
+        const encoder = new TextEncoder();
+        const data = encoder.encode(password);
+        const hashBuffer = await window.crypto.subtle.digest("SHA-256", data);
+        return Array.from(new Uint8Array(hashBuffer))
+            .map((byte) => byte.toString(16).padStart(2, '0'))
+            .join('');
+    };
+
+    const handleLogin = async (e) => {
         e.preventDefault();
+        const hashedPassword = await hashPassword(password); // Hash the input password
         const user = users.find(
-            (u) => u.username === username && u.password === password
+            (u) => u.username === username && u.password === hashedPassword
         );
         if (user) {
             console.log('Login successful!');
@@ -22,7 +32,10 @@ function Login() {
             setError('Invalid email or password');
         }
     };
-
+    //sample user login test
+    //["admin","adminpassword"]
+    //["user1","password1"]
+    //["regulator1","regulatorpassword"]
     return (
         <div className="signup-page">
             <div className="signup-container">

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './DashBoard.css'; // Reuse the same CSS for consistent styling
 import { useNavigate } from 'react-router-dom';
 import Footer from './Footer.jsx'; // Import Footer component
+import UserNavBar from './UserNavBar.jsx'; // Import UserNavBar component
 
 function Regulations() {
   const navigate = useNavigate();
@@ -14,19 +15,22 @@ function Regulations() {
 
   return (
     <div className="dashboard">
-      <nav className="navbar">
-        <div className="navbar-left">
-          <img src="images/watsewise-icon.jpeg" alt="Logo" className="navbar-logo" />
-          <h1 className="navbar-title" onClick={() => { navigate('/csu-ist621-waste-wise/') }}>WasteWise</h1>
-          <button onClick={() => { navigate('/csu-ist621-waste-wise/dashboard') }}>DashBoard</button>
-          <button className="active" onClick={() => { navigate('/csu-ist621-waste-wise/regulations') }}>Regulations</button>
-          <button>Food Redistribution</button>
-          <button>Alerts & Notifications</button>
-        </div>
-      </nav>
-
+      <UserNavBar /> {/* Replace custom navbar with UserNavBar component */}
       <main className="dashboard-content">
         <h1>Regulations</h1>
+        <div className="announcement">
+          <p>
+            <strong>FDA:</strong> Restaurants with average annual food sales under $250,000 may be exempt from certain FSMA recordkeeping requirements but must still follow general food safety regulations.
+          </p>
+          <a
+            href="https://www.fda.gov/food/food-safety-modernization-act-fsma/frequently-asked-questions-fsma-food-traceability-rule?utm_source=chatgpt.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="learn-more-button"
+          >
+            Learn More
+          </a>
+        </div>
         <div className="regulations-grid">
           <div className="regulation-item">
             <h2>1. Understand and Implement the FDA Food Code</h2>
