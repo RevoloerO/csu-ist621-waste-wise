@@ -124,3 +124,115 @@
   color: var(--text-color);
   font-size: 1rem;
 }
+
+.blockchain-management {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: var(--highlight-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blockchain-management h2 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.blockchain-management p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.blockchain-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.blockchain-button:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+.blockchain-link-button {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.blockchain-link-button:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+.hash-tool {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: var(--highlight-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hash-tool h2 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.hash-tool p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+
+.hash-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.hash-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hash-button:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+.hash-result {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: var(--background-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  font-size: 1rem;
+  color: var(--text-color);
+}

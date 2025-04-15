@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { ethers } from 'ethers'; // Import ethers.js for blockchain interaction
 import './AdminPage.css'; // Add CSS for styling
 import users from '../mock-database/users.json'; // Import mock database
 import UserNavBar from './UserNavBar.jsx'; // Import UserNavBar component
@@ -8,6 +9,8 @@ import Footer from './Footer.jsx'; // Import Footer component
 function AdminPage() {
   const navigate = useNavigate();
   const [userList, setUserList] = useState(users); // State to manage user data
+  const [textToHash, setTextToHash] = useState('');
+  const [hashResult, setHashResult] = useState('');
 
   // Simulate getting the logged-in user (replace with actual authentication logic)
   const loggedInUser = users.find((user) => user.isLoggedIn);
@@ -27,6 +30,50 @@ function AdminPage() {
     const updatedUsers = [...userList];
     updatedUsers[index][field] = value;
     setUserList(updatedUsers);
+  };
+
+  const handleBlockchainLink = async () => {
+    try {
+      if (!window.ethereum) {
+        alert('MetaMask is not installed. Please install MetaMask to connect to the blockchain.');
+        return;
+      }
+
+      // Request account access
+      await window.ethereum.request({ method: 'eth_requestAccounts' });
+
+      // Connect to the Ethereum provider
+      const provider = new ethers.providers.Web3Provider(window.ethereum);
+      const signer = provider.getSigner();
+
+      // Smart contract address and ABI
+      const contractAddress = '0x34ba62e5626928836eb8b8d3bb8db3944605794f2affd8e98b80cb00e7abea38';
+      const contractABI = [
+        // Add the ABI of the smart contract here
+      ];
+
+      // Create a contract instance
+      const contract = new ethers.Contract(contractAddress, contractABI, signer);
+
+      // Example interaction: Call a function from the smart contract
+      const result = await contract.someFunction(); // Replace `someFunction` with an actual function from the contract
+      console.log('Blockchain interaction result:', result);
+
+      alert('Successfully connected to the blockchain and executed a function.');
+    } catch (error) {
+      console.error('Error connecting to the blockchain:', error);
+      alert('Failed to connect to the blockchain. Check the console for details.');
+    }
+  };
+
+  const handleTextToHash = () => {
+    try {
+      const hash = ethers.utils.id(textToHash);
+      setHashResult(hash);
+    } catch (error) {
+      console.error('Error generating hash:', error);
+      alert('Failed to generate hash. Check the console for details.');
+    }
   };
 
   return (
@@ -113,6 +160,91 @@ function AdminPage() {
               <p>Manage user roles and monitor platform activity as an administrator.</p>
             </div>
           </div>
+        </section>
+        <section className="blockchain-management">
+          <h2>🔗 Blockchain System</h2>
+          <p>
+            Manage and monitor the blockchain system for tracking food redistribution events. Ensure transparency and trust in the process.
+          </p>
+          <button className="blockchain-button" onClick={handleBlockchainLink}>
+            Connect to Blockchain
+          </button>
+          <a
+            href="https://sepolia.etherscan.io/tx/0x34ba62e5626928836eb8b8d3bb8db3944605794f2affd8e98b80cb00e7abea38"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="blockchain-link-button"
+          >
+            Show Contract
+          </a>
+        </section>
+        <section className="research-purpose">
+          <h2>📚 Research Purpose</h2>
+          <p>
+            Explore detailed insights and statistics about materials, waste, and recycling in the United States.
+          </p>
+          <div className="research-links">
+            <a
+              href="https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/national-overview-facts-and-figures-materials"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="research-link"
+            >
+              Visit EPA National Overview: Facts and Figures
+            </a>
+            <a
+              href="https://www.visualcapitalist.com/cp/visualized-food-waste-in-the-united-states/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="research-link"
+            >
+              Visualized: Food Waste in the United States
+            </a>
+            <a
+              href="https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/food-material-specific-data"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="research-link"
+            >
+              Food Material-Specific Data (EPA)
+            </a>
+            <a
+              href="https://www.unep.org/resources/publication/food-waste-index-report-2024"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="research-link"
+            >
+              UNEP Food Waste Index Report 2024
+            </a>
+            <a
+              href="https://refed.org/food-waste/the-problem/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="research-link"
+            >
+              ReFED: The Problem of Food Waste
+            </a>
+          </div>
+        </section>
+        <section className="hash-tool">
+          <h2>🔑 Text to Hash Tool</h2>
+          <p>Convert any text into a unique hash using Ethereum's `ethers.utils.id()` function.</p>
+          <input
+            type="text"
+            placeholder="Enter text to hash"
+            value={textToHash}
+            onChange={(e) => setTextToHash(e.target.value)}
+            className="hash-input"
+          />
+          <button className="hash-button" onClick={handleTextToHash}>
+            Generate Hash
+          </button>
+          {hashResult && (
+            <div className="hash-result">
+              <p><strong>Hash Result:</strong></p>
+              <p>{hashResult}</p>
+            </div>
+          )}
         </section>
       </main>
       <Footer /> {/* Add Footer component */}

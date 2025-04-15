@@ -19,6 +19,7 @@ import FoodMap from './FoodMap';
 import Terms from './Terms';
 import AdminPage from './AdminPage';
 import About from './About'; // Import About page
+import Notification from './Notification'; // Import Notification page
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
           <Route path="/csu-ist621-waste-wise/regulations" element={<Regulations />} />
           <Route path="/csu-ist621-waste-wise/food-redistribution" element={<FoodRedistribution />} />
           <Route path="/csu-ist621-waste-wise/admin" element={<AdminPage />} />
+          <Route path="/csu-ist621-waste-wise/notifications" element={<Notification />} />
         </Routes>
 
       </APIProvider>

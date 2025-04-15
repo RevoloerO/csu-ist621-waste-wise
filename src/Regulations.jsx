@@ -1,11 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './DashBoard.css'; // Reuse the same CSS for consistent styling
 import { useNavigate } from 'react-router-dom';
 import Footer from './Footer.jsx'; // Import Footer component
 import UserNavBar from './UserNavBar.jsx'; // Import UserNavBar component
+import users from '../mock-database/users.json'; // Import mock database
 
 function Regulations() {
   const navigate = useNavigate();
+
+  const checkLoginStatus = () => {
+    const loggedInUser = users.find((user) => user.isLoggedIn);
+    if (!loggedInUser) {
+      alert('Please, log in');
+      navigate('/csu-ist621-waste-wise/');
+    }
+  };
+
+  useEffect(() => {
+    checkLoginStatus();
+  }, []);
+
   const [showActionSteps1, setShowActionSteps1] = useState(false);
   const [showActionSteps2, setShowActionSteps2] = useState(false);
   const [showActionSteps3, setShowActionSteps3] = useState(false);

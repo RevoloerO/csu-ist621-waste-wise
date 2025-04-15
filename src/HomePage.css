@@ -17,6 +17,8 @@
   /* Use softer white for background */
   padding-top: 60px;
   /* Add padding to avoid overlap with fixed navbar */
+  padding: 20px;
+  /* Add padding around the entire homepage */
 }
 
 body {
@@ -33,6 +35,8 @@ h3,
 .header {
   text-align: center;
   padding: 20px;
+  margin-bottom: 30px;
+  /* Add spacing below the header */
 }
 
 .header img {
@@ -54,6 +58,16 @@ h3,
   padding: 10px 20px;
   border: none;
   cursor: pointer;
+}
+
+.header h1 {
+  margin-bottom: 20px;
+  /* Add spacing below the main heading */
+}
+
+.header p {
+  margin-bottom: 20px;
+  /* Add spacing below the paragraph */
 }
 
 .mission,
@@ -79,6 +93,8 @@ h3,
   gap: 20px;
   flex-wrap: nowrap;
   /* Prevent wrapping */
+  gap: 30px;
+  /* Increase spacing between mission content items */
 }
 
 .mission-text {
@@ -118,6 +134,10 @@ h3,
   box-sizing: border-box;
   background-color: var(--secondary-color);
   color: var(--highlight-color);
+  margin-bottom: 40px;
+  /* Add spacing below the mission section */
+  padding: 20px;
+  /* Add padding inside the mission section */
 }
 .mission h2{
   color: var(--primary-color);
@@ -128,6 +148,8 @@ h3,
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  gap: 30px;
+  /* Increase spacing between statistics content items */
 }
 
 .statistics-content a {
@@ -182,6 +204,10 @@ h3,
   text-align: center;
   border-radius: 10px;
   margin: 20px 0;
+  margin-bottom: 40px;
+  /* Add spacing below the steps section */
+  padding: 30px;
+  /* Add padding inside the steps section */
 }
 
 .steps-intro {
@@ -195,6 +221,8 @@ h3,
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  gap: 30px;
+  /* Increase spacing between step cards */
 }
 
 .step-card {
@@ -374,6 +402,10 @@ h3,
   text-align: center;
   background-color: var(--secondary-color);
   color: var(--highlight-color);
+  margin-bottom: 40px;
+  /* Add spacing below the redistribution benefit section */
+  padding: 30px;
+  /* Add padding inside the redistribution benefit section */
 }
 
 .redistribution-benefit h2 {
@@ -399,6 +431,8 @@ h3,
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  gap: 30px;
+  /* Increase spacing between redistribution content items */
 }
 
 .redistribution-image img {
@@ -502,6 +536,8 @@ h3,
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  margin-top: 30px;
+  /* Add spacing above the impact table */
 }
 
 .impact-table th {

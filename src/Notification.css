@@ -1,0 +1,154 @@
+:root {
+  --primary-color: #6A994E; /* Fresh Green */
+  --secondary-color: #386641; /* Deep Forest Green */
+  --accent-color: #BC4749; /* Muted Red */
+  --text-color: #1D1D1D; /* Dark Charcoal */
+  --background-color: #FAF9F6; /* Light Beige */
+  --highlight-color: #F2E8CF; /* Soft Cream */
+}
+
+.notification-title {
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.notification-subtitle {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.notification-description {
+  font-size: 1rem;
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.modern-card {
+  background: var(--highlight-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.notification-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: var(--background-color);
+}
+
+.notification-table th,
+.notification-table td {
+  border: 1px solid var(--secondary-color);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.notification-table th {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+}
+
+.toggle-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.toggle-button:hover {
+  background-color: var(--secondary-color);
+}
+
+.save-button,
+.connect-button {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.save-button:hover,
+.connect-button:hover {
+  background-color: var(--secondary-color);
+}
+
+.sync-channels {
+  text-align: center;
+}
+
+.sync-options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.sync-option {
+  background: var(--background-color);
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sync-option label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.goals-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.goals-list li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.engine-description {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.engine-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.engine-features li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  color: var(--text-color);
+}

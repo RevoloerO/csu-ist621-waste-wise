@@ -61,7 +61,6 @@ function Login() {
                     <button type="submit">Login</button>
                 </form>
                 {error && <p className="error-message">{error}</p>}
-                <button onClick={() => { navigate('/csu-ist621-waste-wise/dashboard') }}>Login Test</button>
 
                 <p className="login-link">
                     Don't have an account? <Link to="/csu-ist621-waste-wise/signup">Sign Up</Link>

@@ -4,7 +4,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "proxy": "http://localhost:5173",
+  "proxy": "https://revoloero.github.io/csu-ist621-waste-wise",
+  "description": "A web application for visualizing waste data using React and Vite.",
+  "author": "Revoloero",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "vite",
+    "food-waste",
+    "visualization"
+  ], 
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -17,6 +26,7 @@
     "@vis.gl/react-google-maps": "^1.5.2",
     "chart.js": "^4.4.8",
     "crypto": "^1.0.1",
+    "ethers": "^6.13.5",
     "ghpages": "^0.0.10",
     "papaparse": "^5.5.2",
     "react": "^19.0.0",
