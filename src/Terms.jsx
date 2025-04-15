@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 import Footer from './Footer.jsx'; // Reuse the Footer component
 import './Policy.css'; // Reuse Policy.css for consistent styling
 
 function Terms() {
   const navigate = useNavigate(); // Initialize navigation
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []);
 
   return (
     <div className="policy-page">

@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './HomePage.css'; // Reuse the same CSS for consistent styling
 import UserNavBar from './NavBar.jsx'; // Import NavBar component
 import Footer from './Footer.jsx'; // Import Footer component
 
 function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []);
+
   return (
     <div className="homepage">
       <UserNavBar /> {/* Add NavBar component */}

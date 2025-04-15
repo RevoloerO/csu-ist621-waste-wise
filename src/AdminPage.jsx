@@ -246,6 +246,37 @@ function AdminPage() {
             </div>
           )}
         </section>
+        <section className="data-architecture">
+          <h2>🗄️ Hybrid Data Architecture for WasteWise</h2>
+          <p>
+            To ensure transparency, scalability, and regulatory compliance, WasteWise uses a hybrid data architecture model that combines on-chain (blockchain) and off-chain (database/IPFS) storage. Below is a breakdown and accompanying diagram.
+          </p>
+          <div className="data-architecture-row">
+            <div className="on-chain-data">
+              <h3>On-Chain Data (Stored on Ethereum Blockchain)</h3>
+              <ul>
+                <li>Donation Transaction Hash</li>
+                <li>Timestamped Donation Records</li>
+                <li>Smart Contract Conditions (e.g., donation triggers, approval logic)</li>
+                <li>Hashed IDs of Donor and Recipient</li>
+                <li>FSMA Compliance Event Logs</li>
+                <li>Hash of Expiration Logs or Verification Receipts</li>
+              </ul>
+            </div>
+            <div className="off-chain-data">
+              <h3>Off-Chain Data (Stored in Database or IPFS)</h3>
+              <ul>
+                <li>Food Item Descriptions (name, type, category)</li>
+                <li>Images of Food Items</li>
+                <li>Expiration Dates (raw timestamps, updated dynamically)</li>
+                <li>Contact Details of Suppliers and Food Banks (PII)</li>
+                <li>AI Prediction Outputs and Model Logs</li>
+                <li>Real-Time Inventory Changes</li>
+                <li>Food Donation Request Messages or Notes</li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer /> {/* Add Footer component */}
     </div>

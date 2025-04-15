@@ -723,3 +723,9 @@ h3,
     /* Adjust navbar title font size */
   }
 }
+
+@media (min-width: 1200px) {
+  .homepage {
+    margin: 0 50px;
+  }
+}

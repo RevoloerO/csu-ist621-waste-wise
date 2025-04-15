@@ -65,7 +65,7 @@ function DashBoard() {
   })}, []);
   useEffect(() => {
     // Load current year CSV data
-    Papa.parse('data/Monthly_Food_Waste_by_Type__2020_2030.csv', {
+    Papa.parse('data/Monthly_Food_Waste_by_Type__2025_2035.csv', {
       download: true,
       header: true,
       complete: (result) => {

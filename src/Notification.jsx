@@ -21,6 +21,10 @@ function Notification() {
     checkLoginStatus();
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []);
+
   const [settings, setSettings] = useState({
     surplusDetected: true,
     donationMatch: true,

@@ -21,6 +21,10 @@ function FoodRedistribution() {
     checkLoginStatus();
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []);
+
   return (
     <div className="dashboard">
       <UserNavBar /> {/* Replace custom navbar with UserNavBar component */}
