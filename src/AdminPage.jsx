@@ -89,6 +89,7 @@ function AdminPage() {
               <tr>
                 <th>ID</th>
                 <th>Username</th>
+                <th>Password</th>
                 <th>Role</th>
                 <th>First Name</th>
                 <th>Last Name</th>
@@ -100,6 +101,7 @@ function AdminPage() {
                 <tr key={index}>
                   <td>{user.id}</td>
                   <td>{user.username}</td>
+                  <td>{user.password}</td>
                   <td>
                     <select
                       value={user.role}
